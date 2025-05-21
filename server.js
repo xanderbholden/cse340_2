@@ -1,45 +1,44 @@
 /* ******************************************
- * This server.js file is the primary file of the
- * application. It is used to control the project.
- *******************************************/
+* This server.js file is the primary file of the
+* application. It is used to control the project.
+*******************************************/
 /* ***********************
- * Require Statements
- *************************/
-const express = require("express")
-const expressLayouts = require("express-ejs-layouts")
-const env = require("dotenv").config()
-const static = require("./routes/static")
-
- 
-const app = express()
+* Require Statements
+*************************/
+const express = require("express");
+const expressLayouts = require("express-ejs-layouts");
+const env = require("dotenv").config();
+const app = express();
+const static = require("./routes/static");
  
 /* ***********************
- * View Engine and Templates
- *************************/
-app.set("view engine", "ejs")
-app.use(expressLayouts)
-app.set("layout", "./layouts/layout") // not at view root
+* View Engine and Templates
+*************************/
+app.set("view engine", "ejs");
+app.use(expressLayouts);
+app.set("layout", "./layouts/layout");
  
 /* ***********************
- * Routes
- *************************/
-app.use(static)
-//Index route
-app.get("/", baseController.buildHome)
- 
-// Inventory routes - Unit 3, Build Inventory route activity
-app.use("/inv", inventoryRoute)
- 
-/* ***********************
- * Local Server Information
- * Values from .env (environment) file
- *************************/
-const port = process.env.PORT
-const host = process.env.HOST
+* Routes
+*************************/
+app.use(static);
+// Index route
+app.get("/", function (req, res) {
+  console.log("Layout being used: ", app.get("layout"));
+  console.log("View engine:", app.get("view engine"));
+  res.render("index", { title: "HomePage" });
+});
  
 /* ***********************
- * Log statement to confirm server operation
- *************************/
+* Local Server Information
+* Values from .env (environment) file
+*************************/
+const port = process.env.PORT;
+const host = process.env.HOST;
+ 
+/* ***********************
+* Log statement to confirm server operation
+*************************/
 app.listen(port, () => {
-  console.log(`app listening on ${host}:${port}`)
-})
+  console.log(`app listening on ${host}:${port}`);
+});
