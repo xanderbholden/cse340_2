@@ -1,1 +1,30 @@
 <h1>Welcome to CSE Motors!</h1>
+<%- include('partials/header') %>
+
+<main class="home">
+  <section class="hero">
+    <img src="/images/hero-car.jpg" alt="CSE Motors Featured Car" class="hero-image" />
+    <h1 class="headline">Welcome to CSE Motors</h1>
+    <p class="subtext">Quality vehicles. Trusted service. Professional staff.</p>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <img src="/images/sedan.jpg" alt="Sedan" />
+      <h2>Sleek Sedans</h2>
+      <p>Performance and comfort for your everyday needs.</p>
+    </div>
+    <div class="feature">
+      <img src="/images/suv.jpg" alt="SUV" />
+      <h2>Spacious SUVs</h2>
+      <p>Adventure-ready and family-friendly models.</p>
+    </div>
+    <div class="feature">
+      <img src="/images/truck.jpg" alt="Truck" />
+      <h2>Reliable Trucks</h2>
+      <p>Power and durability to handle any job.</p>
+    </div>
+  </section>
+</main>
+
+<%- include('partials/footer') %>
