@@ -1,30 +1,54 @@
-<h1>Welcome to CSE Motors!</h1>
-<%- include('partials/header') %>
 
-<main class="home">
-  <section class="hero">
-    <img src="/images/hero-car.jpg" alt="CSE Motors Featured Car" class="hero-image" />
-    <h1 class="headline">Welcome to CSE Motors</h1>
-    <p class="subtext">Quality vehicles. Trusted service. Professional staff.</p>
-  </section>
+<h2>Welcome to CSE Motors!</h2>
 
-  <section class="features">
-    <div class="feature">
-      <img src="/images/sedan.jpg" alt="Sedan" />
-      <h2>Sleek Sedans</h2>
-      <p>Performance and comfort for your everyday needs.</p>
+<div class="hero">
+    <img id="hero-image" src="/images/vehicles/delorean.jpg" alt="">
+    <div class="call-to-action">
+        <h3>DMC Delorean</h3>
+        <p>3 Cup holders<br>Superman doors<br>Fuzzy dice!</p>
+        <a class="call-link" href="">Own Today</a>
     </div>
-    <div class="feature">
-      <img src="/images/suv.jpg" alt="SUV" />
-      <h2>Spacious SUVs</h2>
-      <p>Adventure-ready and family-friendly models.</p>
+</div>
+<div class="info-wrapper">
+    <div class="reviews">
+        <h2>DMC Delorean Reviews</h2>
+        <ul>
+            <li class="delorean-review">"So fast it's almost like traveling in time." (4/5)</li>
+            <li class="delorean-review">"Coolest ride on the road." (4/5)</li>
+            <li class="delorean-review">"I'm feeling McFly!" (5/5)</li>
+            <li class="delorean-review">"The most futuristic ride of our day." (4.5/5)</li>
+            <li class="delorean-review">"80's livin and I love it!" (5/5)</li>
+        </ul>
     </div>
-    <div class="feature">
-      <img src="/images/truck.jpg" alt="Truck" />
-      <h2>Reliable Trucks</h2>
-      <p>Power and durability to handle any job.</p>
+    <div class="upgrades-wrapper">
+        <h2>Delorean Upgrades</h2>
+        <div class="upgrades">
+            <figure>
+                <div class="upgrade-background">
+                    <img src="/images/upgrades/flux-cap.png" alt="">
+                </div>
+                <figcaption><a href="">Flux Capacitor</a></figcaption>
+            </figure>
+            <figure>
+                <div class="upgrade-background">
+                    <img src="/images/upgrades/flame.jpg" alt="">
+                </div>
+                <figcaption><a href="">Flame Decals</a></figcaption>
+            </figure>
+            <figure>
+                <div class="upgrade-background">
+                    <img src="/images/upgrades/bumper_sticker.jpg" alt="">
+                </div>
+                <figcaption><a href="">Bumper Stickers</a></figcaption>
+            </figure>
+            <figure>
+                <div class="upgrade-background">
+                    <img src="/images/upgrades/hub-cap.jpg" alt="">
+                </div>
+                <figcaption><a href="">Hub Caps</a></figcaption>
+            </figure>
+        </div>
     </div>
-  </section>
-</main>
+</div>
 
 <%- include('partials/footer') %>
