@@ -1,3 +1,17 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "PostgreSQL",
+            "name": "render.com",
+            "connectString": "postgresql://cse340:dqV6wLJwUYOuYy2hfxUbBwAvgjl6srC6@dpg-d0r7vqidbo4c73a3plqg-a.oregon-postgres.render.com/cse340_obcr"
+        }
+    ]
 }
