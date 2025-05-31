@@ -1,16 +1,16 @@
--- 1. Insert Tony Stark
+-- 1. Insert Xander Holden
 INSERT INTO public.account (account_firstname, account_lastname, account_email, account_password)
-VALUES ('Tony', 'Stark', 'tony@starkent.com', 'Iam1ronM@n');
+VALUES ('Xander', 'Holden', 'xanderbholden@gmail.com', 'Iam1ronM@n');
  
  
--- 2. Update Tony Stark
+-- 2. Update Xander Holden
 UPDATE public.account
 SET account_type = 'Admin'
-WHERE account_email = 'tony@starkent.com';
+WHERE account_email = 'xanderbholden@gmail.com';
  
--- 3. Delete Tony Stark
+-- 3. Delete Xander Holden
 DELETE FROM public.account
-WHERE account_email = 'tony@starkent.com';
+WHERE account_email = 'xanderbholden@gmail.com';
  
 -- 4. Replace "small interiors" with "a huge interior" in GM Hummer description
 UPDATE public.inventory
